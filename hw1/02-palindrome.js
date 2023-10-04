@@ -10,7 +10,7 @@ function isPalindromeNumber(number) {
 }
 
 function handleInput() {
-  if (this.value < 0 || isNaN(this.value)) {
+  if (this.value < 0 || this.value.isNaN) {
     result.innerHTML = "No. Try again.";
     result.style.color = "red";
   } else {
