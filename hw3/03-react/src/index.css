@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(84, 36, 108) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(84, 36, 108);
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.page-container {
+  height: 100vh;
+  padding-top: 70px;
+}
+
+.page-container .container {
+  /* background-color: whitesmoke; */
+  height: fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.page-container .title {
+  margin-bottom: 20px;
+}
+
+/* navbar */
+.fixed-top {
+  padding: 10px !important;
+  background-color: transparent !important;
+}
+.navbar > .container {
+  justify-content: center !important;
+}
+.container > a {
+  padding: 10px 20px;
+  margin: 0;
+}
+.container > a:hover {
+  border-radius: 50px;
+  color: white;
+}
+#home-link:hover {
+  background-color: rgb(173, 39, 39);
+}
+#search-link:hover {
+  background-color: rgb(84, 42, 108);
+}
+#houses-link:hover {
+  background-color: rgb(14, 102, 79);
+}
+
+/* home page */
+.Home {
+  background-color: rgb(253, 150, 150);
+  color: rgb(173, 39, 39);
+}
+
+/* houses page */
+.Houses {
+  background-color: rgb(18, 209, 157);
+  color: rgb(14, 102, 79);
+}
+
+/* search page */
+.Search {
+  background-color: rgba(153, 95, 181, 1);
+  color: rgb(55, 22, 74);
+}
+.search-container {
+  height: fit-content;
+}
+.search-container .search-bar {
+  width: 50vw;
+}
+
+.search-bar span {
+  border: none;
+  background-color: rgba(122, 75, 146, 0.5) !important;
+}
+.search-bar input {
+  border: none;
+  background-color: rgba(122, 75, 146, 0.5) !important;
+  padding: 10px 20px !important;
+  font-weight: 500;
+}
+.search-results {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(122, 75, 146, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.search-results .result {
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  margin: 10px;
+}
+.result .img {
+  background-color: aliceblue;
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-size: cover;
+}
+.result .full-name {
+  font-weight: 500;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+/* houses page */
+.Houses .container {
+  height: fit-content;
+  width: fit-content;
+}
+.Houses .container canvas {
+  height: 25vw !important;
+  width: 25vw !important;
+  background-color: rgb(14, 102, 79);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
